@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('path/to/your/login-background.jpg'); /* Unique background for login */
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px; /* Adjusted for a more compact form */
+    margin: auto;
+    padding: 30px; /* Increased padding for better spacing */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Increased font size */
+}
+
+button {
+    width: 100%; /* Button full width */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#loginMessage {
+    text-align: center;
+    color: #d9534f; /* Red color for error messages */
+    margin-top: 10px; /* Spacing above the message */
+}

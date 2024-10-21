@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create/Update Employee</title>
+    <link rel="stylesheet" href="../CSS/employeeForm.css"> <!-- Adjust the path as necessary -->
+    <!-- At the top of EmployeeList.html -->
+<script>
+    const token = localStorage.getItem("token");
+    if (!token) {
+        // Redirect to login if not authenticated
+        window.location.href = 'Login';
+    }
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 id="formTitle">Create Employee</h1>
+        
+        <div class="form-group">
+            <input type="text" id="employeeName" placeholder="Name" required>
+            <input type="text" id="employeePosition" placeholder="Position" required>
+            <input type="number" id="employeeSalary" placeholder="Salary" required>
+            <button id="submitBtn" onclick="submitEmployee()">Create Employee</button>
+        </div>
+        
+        <p id="message"></p>
+    </div>
+
+    <script src="../JS/EmployeeForm.js"></script> <!-- Adjust the path as necessary -->
+</body>
+</html>

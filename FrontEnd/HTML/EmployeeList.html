@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management - Employee List</title>
+    <link rel="stylesheet" href="../CSS/employeelist.css"> <!-- Adjusted path for CSS -->
+    <!-- At the top of EmployeeList.html -->
+<script>
+    const token = localStorage.getItem("token");
+    if (!token) {
+        // Redirect to login if not authenticated
+        window.location.href = 'Login';
+    }
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Employee List</h2>
+        
+        <button id="addEmployeeBtn">Add Employee</button>
+        <button id="deleteEmployeeBtn">Delete Employee</button>
+
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Employee rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../JS/Employeelist.js"></script> <!-- Adjusted path for JS -->
+</body>
+</html>
